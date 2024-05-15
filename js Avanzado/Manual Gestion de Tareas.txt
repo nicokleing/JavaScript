@@ -1,0 +1,96 @@
+Manual de Uso: Aplicación de Gestión de Tareas
+Introducción
+Esta aplicación te permite gestionar tus tareas, organizarlas por categorías y mantener un seguimiento de su estado. Puedes agregar, eliminar, completar, modificar, y filtrar tareas, así como también agregar nuevas categorías.
+
+Requisitos
+Node.js instalado en tu sistema.
+Librería prompt-sync para interactuar con la consola. Puedes instalarla ejecutando:
+sh
+Copy code
+npm install prompt-sync
+Ejecución de la Aplicación
+Para ejecutar la aplicación, usa el siguiente comando en tu terminal:
+
+sh
+Copy code
+node nombre_del_archivo.js
+Reemplaza nombre_del_archivo.js con el nombre del archivo donde está guardado el código.
+
+Menú Principal
+Al iniciar la aplicación, se mostrará un menú con las siguientes opciones:
+
+markdown
+Copy code
+--- Menú ---
+1. Agregar tarea
+2. Eliminar tarea
+3. Marcar tarea como completada
+4. Modificar una tarea
+5. Mostrar todas las tareas
+6. Ver todas las categorías
+7. Agregar nueva categoría
+8. Filtrar tareas por categoría
+9. Visualizar cantidad de tareas completadas
+10. Visualizar todas las tareas no completadas
+11. Ordenar las tareas alfabéticamente
+12. Ordenar las tareas por fecha límite
+13. Buscar una tarea por su nombre
+0. Salir
+Opciones del Menú
+1. Agregar tarea
+Se te pedirá ingresar el nombre de la nueva tarea.
+Luego, se mostrará la lista de categorías disponibles.
+Debes ingresar el número de la categoría correspondiente para la nueva tarea.
+La tarea será agregada y se mostrará un mensaje de confirmación.
+2. Eliminar tarea
+Se te pedirá ingresar el índice de la tarea que deseas eliminar.
+La tarea será eliminada si el índice es válido.
+3. Marcar tarea como completada
+Se te pedirá ingresar el índice de la tarea que deseas marcar como completada.
+La tarea será marcada como completada si el índice es válido.
+4. Modificar una tarea
+Se te pedirá ingresar el índice de la tarea que deseas modificar.
+Luego, se te pedirá seleccionar qué propiedad deseas modificar:
+1: Nombre
+2: Fecha límite
+3: Número de categoría
+Se te pedirá ingresar el nuevo valor para la propiedad seleccionada.
+La tarea será modificada si el índice y el nuevo valor son válidos.
+5. Mostrar todas las tareas
+Se mostrará una lista de todas las tareas.
+6. Ver todas las categorías
+Se mostrará una lista de todas las categorías existentes.
+7. Agregar nueva categoría
+Se te pedirá ingresar el nombre de la nueva categoría.
+La nueva categoría será agregada y se mostrará un mensaje de confirmación.
+8. Filtrar tareas por categoría
+Se te mostrará una lista de categorías.
+Debes ingresar el número de la categoría que deseas filtrar.
+Se mostrará una lista de tareas pertenecientes a la categoría seleccionada.
+9. Visualizar cantidad de tareas completadas
+Se te mostrará una lista de categorías.
+Debes ingresar el número de la categoría que deseas visualizar.
+Se mostrará la cantidad de tareas completadas y el total de tareas en esa categoría.
+10. Visualizar todas las tareas no completadas
+Se mostrará una lista de todas las tareas no completadas.
+11. Ordenar las tareas alfabéticamente
+Las tareas serán ordenadas alfabéticamente por nombre.
+Se mostrará la lista de tareas ordenadas.
+12. Ordenar las tareas por fecha límite
+Las tareas serán ordenadas por la fecha límite.
+Se mostrará la lista de tareas ordenadas.
+13. Buscar una tarea por su nombre
+Se ordenarán las tareas alfabéticamente.
+Se te pedirá ingresar el nombre de la tarea a buscar.
+Se mostrará el índice de la tarea si se encuentra, o un mensaje indicando que no se encontró.
+0. Salir
+Finaliza la ejecución de la aplicación.
+Ejemplo de Uso
+A continuación se presenta un ejemplo del flujo de interacción con la aplicación:
+
+Al ejecutar la aplicación, se muestra el menú.
+Elige la opción "1. Agregar tarea".
+Ingresa "Comprar leche" como nombre de la tarea.
+Se muestran las categorías disponibles.
+Elige "0" para la categoría "Trabajo".
+La tarea es agregada con éxito.
